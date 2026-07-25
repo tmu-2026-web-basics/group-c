@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>診断その２</title>
+    <link rel="stylesheet" href="sindan.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <audio id="bgm" src="../sounds/風鈴の音.mp3"></audio>
+    <div class="main-head">
+        <h1>
+        <a href="../index.html"><img src="../images/logo.png"></a>
+        <button class="sound-button" id="soundBtn" type="button" aria-label="音声のON/OFFを切り替え">
+            <img src="../images/on.png" id="soundBtnIcon" alt="音声ON">
+        </button>
+        </h1>
+    </div>
+     <main class="content-wrap">
+        <div class="survey-outer">
+            <section class="survey-card">
+                <img src="../images/binder.png" class="binder-clip">
+
+                <p class="survey-instruction">該当する項目にチェックをお願いします</p>
+                <h2 class="survey-question">Q1.　今出かけるとしたら？</h2>
+
+                <div class="checkbox-grid">
+                    <label class="checkbox-item">
+                        <span class="checkbox-text">・遠い所</span>
+                        <input type="radio" name="q1" value="far">
+                    </label>
+                    <label class="checkbox-item">
+                        <span class="checkbox-text">・近い所</span>
+                        <input type="radio" name="q1" value="near">
+                    </label>
+                </div>
+                <button type="button" id="nextBtn" data-page="q1" class="next-link">次の質問へ→</button>
+            </section>
+        </div>
+    </main>
+    <script src="sindan.js"></script>
+</body>
+</html>

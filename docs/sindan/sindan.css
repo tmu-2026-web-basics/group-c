@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Serif JP", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+body {
+    min-height: 100vh;
+    background-image:
+        linear-gradient(
+            rgba(255, 255, 255, 0.55),
+            rgba(255, 255, 255, 0.55)
+        ),
+        url("../images/sindan.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1 {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0 150px;
+  background-color: rgb(70, 88, 105);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 110px;
+  overflow: visible;
+}
+h1 a img {
+  width: 120px;
+  height: auto;
+  display: block;
+}
+.sound-button {
+  pointer-events: auto;
+  flex-shrink: 0;
+  background: none;
+  border: none;
+  padding: 0;
+  line-height: 0;
+  cursor: pointer;
+}
+.sound-button img {
+  width: 80px;
+  height: 80px;
+  display: block;
+}
+
+.content-wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px 20px;
+}
+
+.survey-outer {
+  background-color: rgba(70, 88, 105);
+  border-radius: 5px;
+  padding: 50px 40px;
+}
+
+/* 内側：白いカード本体 */
+.survey-card {
+  position: relative;
+  max-width: 1020px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 70px 50px 60px;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+}
+
+.binder-clip {
+  position: absolute;
+  top: -172px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 370px;
+  height: auto;
+}
+
+.survey-instruction {
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 0.1em;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.survey-question {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  margin-bottom: 60px;
+  color: black;
+}
+
+.checkbox-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 36px;
+  column-gap: 100px;
+  margin: 0 auto 60px;
+  width: fit-content;
+}
+
+.checkbox-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  width: 260px;
+  cursor: pointer;
+}
+
+.checkbox-text {
+  font-size: 24px;
+  letter-spacing: 0.05em;
+  color: black;
+}
+
+.checkbox-item input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 24px;
+  height: 24px;
+  border: 2px solid black;
+  background-color: white;
+  cursor: pointer;
+  margin: 0;
+  flex-shrink: 0;
+}
+
+.checkbox-item input[type="radio"]:checked {
+  background-color: rgb(70, 88, 105);
+  border-color: rgb(70, 88, 105);
+}
+
+.next-link {
+  display: block;
+  text-align: right;
+  font-size: 17px;
+  color: black;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  margin-top: auto;
+}
+.next-link:hover {
+  text-decoration: underline;
+}
+button.next-link {
+  background: none;
+  border: none;
+  font-family: inherit;
+  width: 100%;
+}
+
+.result-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(255, 255, 255, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 1.2s ease;
+  z-index: 1000;
+}
+
+.result-overlay.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.result-overlay p {
+  font-size: 32px;
+  letter-spacing: 0.15em;
+  color: rgb(70, 88, 105);
+}
