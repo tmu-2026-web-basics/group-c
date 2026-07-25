@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>マツリームクリーム</title>
+    <link rel="stylesheet" href="medicine.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <audio id="bgm" src="../sounds/風鈴の音.mp3"></audio>
+    <div class="main-head">
+        <h1>
+        <a href="../index.html"><img src="../images/logo.png"></a>
+        <button class="sound-button" id="soundBtn" type="button" aria-label="音声のON/OFFを切り替え">
+            <img src="../images/on.png" id="soundBtnIcon" alt="音声ON">
+        </button>
+        </h1>
+    </div>
+    <main class="medicine-wrap">
+        <div class="medicine-body">
+            <div class="medicine-left">
+                <h2>マツリームクリーム</h2>
+                <img src="../images/fes.png" class="medicine-img">
+                <h3>【効果・効能】</h3>
+                <p>
+                    夕方のひんやりした空気と夏の熱を帯びた香りが肌に広がり、<br>
+                    夏の夕方に行われる「祭り」特有の高揚感をもたらします。<br>
+                    太鼓の音や提灯の灯り、人々の賑やかな声...<br>
+                    日常の輪郭が少しづつ溶けていき、<br>
+                    非日常的な祭りの高揚と心地よい疲れが混ざり合い、<br>
+                    眠っていたおてんばな心を呼び覚まします。
+                </p>
+            </div>
+            <div class="medicine-right">
+                <div class="medicine-right-col">
+                    <h3>【成分】</h3>
+                    <p>・提灯の灯り<br>・太鼓の振動<br>・人混み<br>・夕方の風<br>・夕日</p>
+                    <h3>【服用時点】</h3>
+                    <p>太鼓の音と人の賑やかさに導かれた時</p>
+                    <h3>【副作用】</h3>
+                    <p>使用してから一定時間経過すると、もの寂しさを感じます</p>
+                </div>
+                <div class="medicine-right-col">
+                    <h3>【生産地】</h3>
+                    <p>トウキョウ</p>
+                    <h3>【製造会社名】</h3>
+                    <p>みんみん調剤所</p>
+                </div>
+                <button type="button" class="hukuyou-btn" id="hukuyouBtn">服用してみる</button>
+            </div>
+        </div>
+        <div class="loading-overlay" id="loadingOverlay">
+            <img data-src="../gif/cream.gif" class="loading-gif" id="loadingGif">
+        </div>
+        <div class="video-overlay" id="videoOverlay">
+            <div class="video-head" id="videoHead">
+                <a href="../index.html"><img src="../images/logo.png"></a>
+                <button class="sound-button" id="soundBtn2" type="button" aria-label="音声のON/OFFを切り替え">
+                    <img src="../images/on.png" id="soundBtnIcon2" alt="音声ON">
+                </button>
+            </div>
+            <video id="video" src="../movies/fes.mp4" playsinline loop class="video"></video>
+            <div class="maker-note" id="makerNote">
+                <h3>製造者からひとこと</h3>
+                <p>
+                    小さい頃によく行っていた夏祭りは、初めて屋台のかき氷食べた場所であり、<br>
+                    わずかばかりのお小遣いを奮発する特別な場所でした。<br>
+                    振りもわからないまま、<br>
+                    見様見真似で輪に入って踊った盆踊りの高揚感は今でも覚えています。<br>
+                    小学校中学年にあがってからは足が遠のいてしまいましたが、大人になった今でも、<br>
+                    遠くから聞こえる太鼓の音にどうしても心が惹かれてしまいます。<br>
+                    あの賑やかな空気感を、日常のふとした瞬間に思い出せるような、<br>
+                    優しい余韻をこのお薬に込めました。<br>
+                </p>
+            </div>
+            <div class="back-btn-wrap">
+                <button type="button" class="back-btn" id="backBtn">診断に戻る</button>
+            </div>
+            <footer class="video-footer" id="videoFooter">
+                <p class="footer-title">夏の処方帖</p>
+                <a href="../index.html" class="footer-top">【TOP】</a>
+                <p class="footer-copy">©2026,July 夏の処方帖制作グループC</p>
+            </footer>
+        </div>
+    <script src="medicine.js"></script>
+</body>
+</html>

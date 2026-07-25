@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ラムネール錠 1.9%</title>
+    <link rel="stylesheet" href="medicine.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <audio id="bgm" src="../sounds/風鈴の音.mp3"></audio>
+    <div class="main-head">
+        <h1>
+        <a href="../index.html"><img src="../images/logo.png"></a>
+        <button class="sound-button" id="soundBtn" type="button" aria-label="音声のON/OFFを切り替え">
+            <img src="../images/on.png" id="soundBtnIcon" alt="音声ON">
+        </button>
+        </h1>
+    </div>
+    <main class="medicine-wrap">
+        <div class="medicine-body">
+            <div class="medicine-left">
+                <h2>ラムネール錠 1.9%</h2>
+                <img src="../images/ramune.png" class="medicine-img">
+                <h3>【効果・効能】</h3>
+                <p>
+                    微炭酸の弾ける刺激と爽快な清涼感が、<br>
+                    夏の暑さでぼんやりした心身を一瞬で目覚めさせます。<br>
+                    ラムネの甘さや瓶のビー玉の音が「あの夏の日」の記憶を呼び覚まし、<br>
+                    懐かしさと胸のきゅんとするノスタルジーを届けます。<br>
+                    渇いた喉を潤しながら、日々のストレスから心を解き放ちます。
+                </p>
+            </div>
+            <div class="medicine-right">
+                <div class="medicine-right-col">
+                    <h3>【成分】</h3>
+                    <p>・ガラス瓶<br>・ビー玉<br>・炭酸ガス<br>・砂糖</p>
+                    <h3>【服用時点】</h3>
+                    <p>シュワっと爽快になりたい夏の夜</p>
+                    <h3>【副作用】</h3>
+                    <p>
+                        ・まれにお腹が張ることがあります<br>
+                        ・冷蔵保存方法を誤ると、服用時に口の中で弾けることがあります
+                    </p>
+                </div>
+                <div class="medicine-right-col">
+                    <h3>【生産地】</h3>
+                    <p>トウキョウ</p>
+                    <h3>【製造会社名】</h3>
+                    <p>みんみん調剤所</p>
+                </div>
+                <button type="button" class="hukuyou-btn" id="hukuyouBtn">服用してみる</button>
+            </div>
+        </div>
+        <div class="loading-overlay" id="loadingOverlay">
+            <img data-src="../gif/candy.gif" class="loading-gif" id="loadingGif">
+        </div>
+        <div class="video-overlay" id="videoOverlay">
+            <div class="video-head" id="videoHead">
+                <a href="../index.html"><img src="../images/logo.png"></a>
+                <button class="sound-button" id="soundBtn2" type="button" aria-label="音声のON/OFFを切り替え">
+                    <img src="../images/on.png" id="soundBtnIcon2" alt="音声ON">
+                </button>
+            </div>
+            <video id="video" src="../movies/ramune.mp4" playsinline loop class="video"></video>
+            <div class="maker-note" id="makerNote">
+                <h3>製造者からひとこと</h3>
+                <p>
+                    子供の頃、私にとってラムネや綺麗なビー玉は<br>
+                    簡単には手に入らない「夏の憧れ」でした。<br>
+                    小学生になって初めて買ってもらった時、ワクワクしながら開けようとしたものの、<br>
+                    なかなかうまく開けられずに手伝ってもらったことは良い思い出です。<br>
+                    成長したいまは、飲みたくなったら自分で購入し、<br>
+                    開ける時は自分の手でカチッと開けることができます。<br>
+                    この薬は、そんな小さな成長の奇跡と、あの頃抱いた憧れを詰め込んだものです。<br>
+                    ラムネを開ける時の緊張感と爽快感を届けたくて作りました。
+                </p>
+            </div>
+            <div class="back-btn-wrap">
+                <button type="button" class="back-btn" id="backBtn">診断に戻る</button>
+            </div>
+            <footer class="video-footer" id="videoFooter">
+                <p class="footer-title">夏の処方帖</p>
+                <a href="../index.html" class="footer-top">【TOP】</a>
+                <p class="footer-copy">©2026,July 夏の処方帖制作グループC</p>
+            </footer>
+        </div>
+    <script src="medicine.js"></script>
+</body>
+</html>

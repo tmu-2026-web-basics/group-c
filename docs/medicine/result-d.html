@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>オーシャン顆ィ粒</title>
+    <link rel="stylesheet" href="medicine.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <audio id="bgm" src="../sounds/風鈴の音.mp3"></audio>
+    <div class="main-head">
+        <h1>
+        <a href="../index.html"><img src="../images/logo.png"></a>
+        <button class="sound-button" id="soundBtn" type="button" aria-label="音声のON/OFFを切り替え">
+            <img src="../images/on.png" id="soundBtnIcon" alt="音声ON">
+        </button>
+        </h1>
+    </div>
+    <main class="medicine-wrap">        
+        <div class="medicine-body">
+            <div class="medicine-left">
+                <h2>オーシャン顆ィ粒</h2>
+                <img src="../images/ocean.png" class="medicine-img">
+                <h3>【効果・効能】</h3>
+                <p>
+                    強い夏の日差しに疲れた心身へ、避暑地のような清涼感を与える一服です。<br>
+                    波の音と海風が熱をやわらげ、張りつめた気持ちを<br>
+                    ゆっくりほぐしてくれます。<br>
+                    都会の喧騒の中でも気軽に服用でき、<br>
+                    遠出せずとも水辺の静けさを思い出しながら、<br>
+                    ほてりを鎮めたいときにおすすめです。
+                </p>
+            </div>
+            <div class="medicine-right">
+                <div class="medicine-right-col">
+                    <h3>【成分】</h3>
+                    <p>・砂<br>・海<br>・空<br>・雲 <br>・コンクリート</p>
+                    <h3>【服用時点】</h3>
+                    <p>涼みたいとき</p>
+                    <h3>【副作用】</h3>
+                    <p>砂が靴に入って不快になる可能性あり</p>
+                </div>
+                <div class="medicine-right-col">
+                    <h3>【生産地】</h3>
+                    <p>トウキョウ</p>
+                    <h3>【製造会社名】</h3>
+                    <p>フジ製薬</p>
+                </div>
+                <button type="button" class="hukuyou-btn" id="hukuyouBtn">服用してみる</button>
+            </div>
+        </div>
+        <div class="loading-overlay" id="loadingOverlay">
+            <img data-src="../gif/powder.gif" class="loading-gif" id="loadingGif">
+        </div>
+        <div class="video-overlay" id="videoOverlay">
+            <div class="video-head" id="videoHead">
+                <a href="../index.html"><img src="../images/logo.png"></a>
+                <button class="sound-button" id="soundBtn2" type="button" aria-label="音声のON/OFFを切り替え">
+                    <img src="../images/on.png" id="soundBtnIcon2" alt="音声ON">
+                </button>
+            </div>
+            <video id="video" src="../movies/ocean.mp4" playsinline loop class="video"></video>
+            <div class="maker-note" id="makerNote">
+                <h3>製造者からひとこと</h3>
+                <p>
+                    私は小学生時代に沖縄に住んでいたことがあり、<br>
+                    その頃はしょっちゅう海に行っていました。<br>
+                    東京に戻ってからも海が名残惜しく、<br>
+                    今でも休みの日などには海や運河に散歩に行きます。<br>
+                    「海は地球生命の母」という言葉もあるように、<br>
+                    海にはどこか圧倒されるものを感じます。<br>
+                    今回の場所においては、勝手ながら、<br>
+                    自然の象徴である海と、<br>
+                    人間の暮らしを表すレインボーブリッジや工業エリアの融合が<br>
+                    また色々感じさせます。<br>
+                </p>
+            </div>
+            <div class="back-btn-wrap">
+                <button type="button" class="back-btn" id="backBtn">診断に戻る</button>
+            </div>
+            <footer class="video-footer" id="videoFooter">
+                <p class="footer-title">夏の処方帖</p>
+                <a href="../index.html" class="footer-top">【TOP】</a>
+                <p class="footer-copy">©2026,July 夏の処方帖制作グループC</p>
+            </footer>
+        </div>
+    <script src="medicine.js"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>グルーミン隧錠</title>
+    <link rel="stylesheet" href="medicine.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <audio id="bgm" src="../sounds/風鈴の音.mp3"></audio>
+    <div class="main-head">
+        <h1>
+        <a href="../index.html"><img src="../images/logo.png"></a>
+        <button class="sound-button" id="soundBtn" type="button" aria-label="音声のON/OFFを切り替え">
+            <img src="../images/on.png" id="soundBtnIcon" alt="音声ON">
+        </button>
+        </h1>
+    </div>
+    <main class="medicine-wrap">
+        <div class="medicine-body">
+            <div class="medicine-left">
+                <h2>グルーミン隧錠</h2>
+                <img src="../images/tunnel.png" class="medicine-img">
+                <h3>【効果・効能】</h3>
+                <p>
+                    夏の暑さに疲れた心身へ、トンネルのひんやりした空気のような<br>涼しさを与える一服です。<br>
+                    薄暗い空間と先が見えない出口は、心霊話や恐怖体験を思い起こし、静けさや足音の反響が非日常の緊張感を思い起こします。<br>
+                    涼しさとともに、冒険心と少しの恐怖を呼び覚まします。
+                </p>
+            </div>
+            <div class="medicine-right">
+                <div class="medicine-right-col">
+                    <h3>【成分】</h3>
+                    <p>・コンクリート<br>・電灯<br>・電車<br>・暗闇</p>
+                    <h3>【服用時点】</h3>
+                    <p>ヒヤリとしたいとき</p>
+                    <h3>【副作用】</h3>
+                    <p>まれに何か憑く可能性あります</p>
+                </div>
+                <div class="medicine-right-col">
+                    <h3>【生産地】</h3>
+                    <p>トウキョウ</p>
+                    <h3>【製造会社名】</h3>
+                    <p>フジ製薬</p>
+                </div>
+                <button type="button" class="hukuyou-btn" id="hukuyouBtn">服用してみる</button>
+            </div>
+        </div>
+        <div class="loading-overlay" id="loadingOverlay">
+            <img data-src="../gif/capsule.gif" class="loading-gif" id="loadingGif">
+        </div>
+        <div class="video-overlay" id="videoOverlay">
+            <div class="video-head" id="videoHead">
+                <a href="../index.html"><img src="../images/logo.png"></a>
+                <button class="sound-button" id="soundBtn2" type="button" aria-label="音声のON/OFFを切り替え">
+                    <img src="../images/on.png" id="soundBtnIcon2" alt="音声ON">
+                </button>
+            </div>
+            <video id="video" src="../movies/tunnel.mp4" playsinline loop class="video"></video>
+            <div class="maker-note" id="makerNote">
+                <h3>製造者からひとこと</h3>
+                <p>
+                    このトンネルには、実際に体験した不思議な出来事があります。<br>
+                    数年前の夕方、家族と歩いていたときのことです。<br>
+                    トンネルの途中で、ある地点に差しかかった瞬間、理由もなく恐怖心が湧き上がり、<br>
+                    思わず小走りで外へ駆け出しました。<br>
+                    すると家族も慌てた様子で走ってきます。話を聞くと、<br>
+                    私が怖くなったのとまったく同じ場所で、<br>
+                    家族も得体の知れない不安を感じていたのだそうです。<br>
+                    事故や日く付きの場所ではないはずなのに、<br>
+                    なぜか人の心をざわつかせるものがある――。<br>
+                    トンネルという空間は、なにか滞留するものがあるのかもしれません。
+                </p>
+            </div>
+            <div class="back-btn-wrap">
+                <button type="button" class="back-btn" id="backBtn">診断に戻る</button>
+            </div>
+            <footer class="video-footer" id="videoFooter">
+                <p class="footer-title">夏の処方帖</p>
+                <a href="../index.html" class="footer-top">【TOP】</a>
+                <p class="footer-copy">©2026,July 夏の処方帖制作グループC</p>
+            </footer>
+        </div>
+    <script src="medicine.js"></script>
+</body>
+</html>

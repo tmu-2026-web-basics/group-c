@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>原風景シロップ</title>
+    <link rel="stylesheet" href="medicine.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <audio id="bgm" src="../sounds/風鈴の音.mp3"></audio>
+    <div class="main-head">
+        <h1>
+        <a href="../index.html"><img src="../images/logo.png"></a>
+        <button class="sound-button" id="soundBtn" type="button" aria-label="音声のON/OFFを切り替え">
+            <img src="../images/on.png" id="soundBtnIcon" alt="音声ON">
+        </button>
+        </h1>
+    </div>
+    <main class="medicine-wrap">        
+        <div class="medicine-body">
+            <div class="medicine-left">
+                <h2>原風景シロップ</h2>
+                <img src="../images/field.png" class="medicine-img">
+                <h3>【効果・効能】</h3>
+                <p>
+                    畑の緑と青空の風景を主成分とし、忙しい日々で忘れかけた「夏らしさ」を<br>
+                    穏やかに補給するシロップです。<br>
+                    蒸し暑さや汗さえも夏の一部として受け入れられるようになります。<br>
+                    自然の風や木陰の心地よさを思い出したい人や<br>
+                    日常から少し離れて深呼吸したい人に向けた、<br>
+                    懐かしさと開放感を与える調合です。
+                </p>
+            </div>
+            <div class="medicine-right">
+                <div class="medicine-right-col">
+                    <h3>【成分】</h3>
+                    <p>・青く澄んだ夏空<br>・風に揺れる畑<br>・真夏の日差し<br>・土の香り<br>・鴉の鳴き声</p>
+                    <h3>【服用時点】</h3>
+                    <p>深呼吸がしたくなったとき</p>
+                    <h3>【副作用】</h3>
+                    <p>突然駆け出したくなります</p>
+                </div>
+                <div class="medicine-right-col">
+                    <h3>【生産地】</h3>
+                    <p>カナガワ</p>
+                    <h3>【製造会社名】</h3>
+                    <p>春巻製薬株式会社</p>
+                </div>
+                <button type="button" class="hukuyou-btn" id="hukuyouBtn">服用してみる</button>
+            </div>
+        </div>
+        <div class="loading-overlay" id="loadingOverlay">
+            <img data-src="../gif/syrup.gif" class="loading-gif" id="loadingGif">
+        </div>
+        <div class="video-overlay" id="videoOverlay">
+            <div class="video-head" id="videoHead">
+                <a href="../index.html"><img src="../images/logo.png"></a>
+                <button class="sound-button" id="soundBtn2" type="button" aria-label="音声のON/OFFを切り替え">
+                    <img src="../images/on.png" id="soundBtnIcon2" alt="音声ON">
+                </button>
+            </div>
+            <video id="video" src="../movies/field.mp4" playsinline loop class="video"></video>
+            <div class="maker-note" id="makerNote">
+                <h3>製造者からひとこと</h3>
+                <p>
+                    夏のジメジメとした暑さの中、汗が流れてくるほどの気温だったにもかかわらず、<br>
+                    不思議とその場を離れたくないと思いました。<br>
+                    風が吹くたびに畑の緑が揺れ、遠くからは鴉の声が聞こえてきます。<br>
+                    木々がつくる影の下に立って景色を眺めていると、<br>
+                    子どもの頃の夏休みの記憶がふとよみがえりました。<br>
+                    ただの地元の景色ですが、そこには確かに夏の魅力があります。<br>
+                    暑さも風も匂いも含めて、大人になった今だからこそ味わいたい、私にとっての<br>
+                    夏の原風景です。
+                </p>
+            </div>
+            <div class="back-btn-wrap">
+                <button type="button" class="back-btn" id="backBtn">診断に戻る</button>
+            </div>
+            <footer class="video-footer" id="videoFooter">
+                <p class="footer-title">夏の処方帖</p>
+                <a href="../index.html" class="footer-top">【TOP】</a>
+                <p class="footer-copy">©2026,July 夏の処方帖制作グループC</p>
+            </footer>
+        </div>
+    <script src="medicine.js"></script>
+</body>
+</html>

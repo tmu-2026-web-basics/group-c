@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>蚊取貼香</title>
+    <link rel="stylesheet" href="medicine.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <audio id="bgm" src="../sounds/風鈴の音.mp3"></audio>
+    <div class="main-head">
+        <h1>
+        <a href="../index.html"><img src="../images/logo.png"></a>
+        <button class="sound-button" id="soundBtn" type="button" aria-label="音声のON/OFFを切り替え">
+            <img src="../images/on.png" id="soundBtnIcon" alt="音声ON">
+        </button>
+        </h1>
+    </div>
+    <main class="medicine-wrap">
+        <div class="medicine-body">
+            <div class="medicine-left">
+                <h2>蚊取貼香</h2>
+                <img src="../images/ka.png" class="medicine-img">
+                <h3>【効果・効能】</h3>
+                <p>
+                    夏の夜の不快感を静かに鎮める清涼貼付薬です。<br>
+                    蚊取り線香の柔らかな香煙を模した成分が肌の熱を散らし、<br>
+                    頭部に貼ることで鎮静成分が広がり精神を整えます。<br>
+                    集中力が乱れやすい夏に、清涼感と落ち着きを与えて<br>
+                    心身を支える季節処方薬です。
+                </p>
+            </div>
+            <div class="medicine-right">
+                <div class="medicine-right-col">
+                    <h3>【成分】</h3>
+                    <p>・蚊取り線香<br>・煙<br>・火<br>・蚊<br>・香料</p>
+                    <h3>【服用時点】</h3>
+                    <p>夏の夜、気が散って作業に集中できない時</p>
+                    <h3>【副作用】</h3>
+                    <p>長時間の使用で、まれに蚊に刺されたような刺激やかゆみを伴います</p>
+                </div>
+                <div class="medicine-right-col">
+                    <h3>【生産地】</h3>
+                    <p>カナガワ</p>
+                    <h3>【製造会社名】</h3>
+                    <p>セガワ堂</p>
+                </div>
+                <button type="button" class="hukuyou-btn" id="hukuyouBtn">服用してみる</button>
+            </div>
+        </div>
+        <div class="loading-overlay" id="loadingOverlay">
+            <img data-src="../gif/compress.gif" class="loading-gif" id="loadingGif">
+        </div>
+        <div class="video-overlay" id="videoOverlay">
+            <div class="video-head" id="videoHead">
+                <a href="../index.html"><img src="../images/logo.png"></a>
+                <button class="sound-button" id="soundBtn2" type="button" aria-label="音声のON/OFFを切り替え">
+                    <img src="../images/on.png" id="soundBtnIcon2" alt="音声ON">
+                </button>
+            </div>
+            <video id="video" src="../movies/ka.mp4" playsinline loop class="video"></video>
+            <div class="maker-note" id="makerNote">
+                <h3>製造者からひとこと</h3>
+                <p>
+                    製造者は、毎年夏の琵琶湖で開催される鳥人間コンテストの<br>
+                    出場と優勝を目指すサークルに所属しているのですが、<br>
+                    コンテストが近づいてくると外での機体製作作業が増えていきます。<br>
+                    東京都立大学南大沢CPは自然豊かであることで有名ですが、<br>
+                    それに伴って虫が通常よりも巨大かつ沢山生息していることでも有名です。<br>
+                    そのため、作業場に蚊取り線香は必須条件です。<br>
+                    蚊取り線香に火をつけるだけで一瞬にして作業場環境の快適さが変わるほど、<br>
+                    個人的には夏の偉大な存在です。<br>
+                    時折作業で疲れた際は、蚊取り線香が緩やかに燃えていく様子や<br>
+                    細い煙が立ち上っていく様子をぼんやりと眺めています。
+                </p>
+            </div>
+            <div class="back-btn-wrap">
+                <button type="button" class="back-btn" id="backBtn">診断に戻る</button>
+            </div>
+            <footer class="video-footer" id="videoFooter">
+                <p class="footer-title">夏の処方帖</p>
+                <a href="../index.html" class="footer-top">【TOP】</a>
+                <p class="footer-copy">©2026,July 夏の処方帖制作グループC</p>
+            </footer>
+        </div>
+    <script src="medicine.js"></script>
+</body>
+</html>
