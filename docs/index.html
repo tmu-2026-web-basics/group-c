@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>トップページ</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <audio id="bgm" src="sounds/風鈴の音.mp3"></audio>
+    <img class="logo" src="images/logo.png">
+    <div class="volume-overlay" id="volumeOverlay">
+        <div class="volume-text">
+            <h2>サウンドのON/OFFが選べます</h2>
+            <h2>（いつでもON/OFFの変更可能です）</h2>
+        </div>
+        <div class="volume-icons">
+            <img id="soundOn" src="images/on.png" alt="音声ON">
+            <img id="soundOff" src="images/off.png" alt="音声OFF">
+        </div>
+        <div class="volume-text">
+            <h3>サウンドON　　　　　サウンドOFF</h3>
+        </div>
+    </div>
+    
+    <div class="intro-wrapper">
+        <div class="introduce-band">
+            <h1>夏の処方帖</h1>
+            <h3>
+                あなたの胸の奥で、<br>
+                名前の付いていない「夏」の記憶が<br>
+                そっと息をしていませんか？
+            </h3>
+            <h3>
+                この処方帖は<br>
+                「夏の記憶をそっと思い返したい人」<br>
+                に向けて作られました。
+            </h3>
+            <h3>
+                夏の診断を通して<br>
+                私たちの「夏」の記憶で綴られた帳面を開き、<br>
+                貴方の気分に寄り添うかたちで調合します。
+            </h3>
+            <h3>
+                それでは<br>
+                貴方の「夏」の記憶を辿りに行きましょう
+            </h3>
+            <h3 id="scrollText">
+                SCROLL<br>↓
+            </h3>
+        </div>
+    </div>
+    
+    <div class="stack" id="stack">
+        <img class="ichiran" src="images/ichiran.png" alt="海の写真">
+        <div class="main-head" id="mainHead">
+            <h1>
+                <a href="index.html"><img src="images/logo.png"></a>
+                 <button class="sound-button" id="soundBtn" type="button" aria-label="音声のON/OFFを切り替え">
+                    <img src="images/on.png" id="soundBtnIcon" alt="音声ON">
+                </button>
+            </h1>
+        </div>
+        <div class="main" id="maincontext">
+            <h3>
+                以下の「診断する」ボタンから<br>
+                夏の問診票の記入をお願いします。<br><br>
+                診断結果をもとにあなたの気分に寄り添った「夏」を調合します。
+            </h3>
+            <a href="sindan/sindan-1.html" class="sindan-btn">診断する</a>
+            <p>↓種類から選ぶ</p>
+            <h2 id="natsuListTitle">夏一覧</h2>
+            <div class="natsu-list" id="natsuList">
+                <div class="natsu-col">
+                    <div class="natsu-item" style="background-image: url('images/fes.png');">
+                        <div class="natsu-overlay">
+                            <p class="natsu-title">マツリールクリーム</p>
+                            <a href="medicine/result-b.html" class="natsu-link">詳細を見る＞</a>
+                        </div>
+                    </div>
+                    <div class="natsu-item" style="background-image: url('images/ramune.png');">
+                        <div class="natsu-overlay">
+                            <p class="natsu-title">ラムネール錠 1.9%</p>
+                            <a href="medicine/result-i.html" class="natsu-link">詳細を見る＞</a>
+                        </div>
+                    </div>
+                    <div class="natsu-item" style="background-image: url('images/tunnel.png');">
+                        <div class="natsu-overlay">
+                            <p class="natsu-title">グルーミン隧錠</p>
+                            <a href="medicine/result-a.html" class="natsu-link">詳細を見る＞</a>
+                        </div>
+                    </div>
+                </div>
+            <div class="natsu-col natsu-col-center">
+                <div class="natsu-item" style="background-image: url('images/ocean.png');">
+                    <div class="natsu-overlay">
+                            <p class="natsu-title">オーシャン顆ィ粒</p>
+                            <a href="medicine/result-d.html" class="natsu-link">詳細を見る＞</a>
+                        </div>
+                </div>
+                <div class="natsu-item" style="background-image: url('images/shrine.png');">
+                    <div class="natsu-overlay">
+                            <p class="natsu-title">杜の雫（もりのしずく）</p>
+                            <a href="medicine/result-f.html" class="natsu-link">詳細を見る＞</a>
+                        </div>
+                </div>
+                <div class="natsu-item" style="background-image: url('images/field.png');">
+                    <div class="natsu-overlay">
+                            <p class="natsu-title">原風景シロップ</p>
+                            <a href="medicine/result-e.html" class="natsu-link">詳細を見る＞</a>
+                        </div>
+                </div>
+                <div class="natsu-item" style="background-image: url('images/sunset.png');">
+                    <div class="natsu-overlay">
+                            <p class="natsu-title">夕凪ドロップ</p>
+                            <a href="medicine/result-h.html" class="natsu-link">詳細を見る＞</a>
+                        </div>
+                </div>
+            </div>
+            <div class="natsu-col">
+                <div class="natsu-item" style="background-image: url('images/forest.png');">
+                    <div class="natsu-overlay">
+                            <p class="natsu-title">森音錠</p>
+                            <a href="medicine/result-c.html" class="natsu-link">詳細を見る＞</a>
+                        </div>
+                </div>
+                <div class="natsu-item" style="background-image: url('images/ka.png');">
+                    <div class="natsu-overlay">
+                            <p class="natsu-title">蚊取貼香</p>
+                            <a href="medicine/result-j.html" class="natsu-link">詳細を見る＞</a>
+                        </div>
+                </div>
+                <div class="natsu-item" style="background-image: url('images/water_melon.png');">
+                    <div class="natsu-overlay">
+                            <p class="natsu-title">西瓜漢方（すいかんぽう）</p>
+                            <a href="medicine/result-g.html" class="natsu-link">詳細を見る＞</a>
+                        </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <h2>夏の処方帖</h2>
+        <nav class="footer-nav">
+            <a href="sindan/sindan-1.html">【診断する】</a>
+            <a href="index.html">【TOP】</a>
+            <a href="" id="footerNatsuLink">【夏一覧】</a>
+        </nav>
+        <p>©2026,July　夏の処方帖制作グループC</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
