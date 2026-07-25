@@ -1,3 +1,5 @@
+// こことかでの音声設定が今後ページを飛んでも反映されるように設定する
+
 const bgm = document.getElementById('bgm');
 const overlay = document.getElementById('volumeOverlay');
 const soundOn = document.getElementById('soundOn');
