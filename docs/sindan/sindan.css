@@ -71,7 +71,7 @@ h1 a img {
   margin: 0 auto;
   background-color: white;
   padding: 70px 50px 60px;
-  height: 550px;
+  min-height: 550px;
   display: flex;
   flex-direction: column;
 }
@@ -184,4 +184,161 @@ button.next-link {
   font-size: 32px;
   letter-spacing: 0.15em;
   color: rgb(70, 88, 105);
+}
+
+/* =========================
+   画面幅の狭い端末用の補正
+   index.html側と同じ900px/760px/450pxを基準に段階調整する
+========================= */
+
+/* 900px以下：横幅に合わせて余白・binder・チェック項目の間隔を少し詰める */
+@media (max-width: 900px) {
+  h1 {
+    padding: 0 5vw;
+  }
+
+  .content-wrap {
+    padding: 32px 20px 20px;
+  }
+
+  .survey-outer {
+    padding: 36px 24px;
+  }
+
+  .survey-card {
+    padding: 60px 30px 40px;
+    min-height: 480px;
+  }
+
+  .binder-clip {
+    width: 300px;
+    top: -140px;
+  }
+
+  .survey-question {
+    font-size: 26px;
+    margin-bottom: 40px;
+  }
+
+  .checkbox-grid {
+    column-gap: 60px;
+    row-gap: 28px;
+  }
+
+  .checkbox-item {
+    width: 220px;
+  }
+
+  .checkbox-text {
+    font-size: 20px;
+  }
+}
+
+/* 760px以下：main-headとチェック項目を1列にしてスマホ向けレイアウトへ */
+@media (max-width: 760px) {
+  /* iOSでbackground-attachment: fixedが不安定になるのを避ける */
+  body {
+    background-attachment: scroll;
+  }
+
+  h1 {
+    height: 80px;
+    padding: 0 5vw;
+  }
+
+  h1 a img {
+    width: 85px;
+  }
+
+  .sound-button img {
+    width: 55px;
+    height: 55px;
+  }
+
+  .content-wrap {
+    padding: 24px 14px 14px;
+  }
+
+  .survey-outer {
+    padding: 24px 14px;
+  }
+
+  .survey-card {
+    padding: 60px 20px 30px;
+    min-height: 0;
+  }
+
+  .binder-clip {
+    width: 220px;
+    top: -100px;
+  }
+
+  .survey-instruction {
+    font-size: 15px;
+    margin-bottom: 14px;
+  }
+
+  .survey-question {
+    font-size: 20px;
+    letter-spacing: 0.08em;
+    line-height: 1.5;
+    margin-bottom: 30px;
+  }
+
+  /* チェック項目を1列に。中央寄せで幅を画面に合わせる */
+  .checkbox-grid {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+    column-gap: 0;
+    width: 100%;
+    max-width: 280px;
+    margin-bottom: 40px;
+  }
+
+  .checkbox-item {
+    width: 100%;
+  }
+
+  .checkbox-text {
+    font-size: 17px;
+  }
+
+  .checkbox-item input[type="radio"] {
+    width: 20px;
+    height: 20px;
+  }
+
+  .next-link {
+    font-size: 15px;
+  }
+
+  .result-overlay p {
+    font-size: 22px;
+    padding: 0 24px;
+    text-align: center;
+  }
+}
+
+/* 450px以下：さらに小さい端末向けに微調整 */
+@media (max-width: 450px) {
+  .survey-card {
+    padding: 48px 14px 24px;
+  }
+
+  .binder-clip {
+    width: 170px;
+    top: -78px;
+  }
+
+  .survey-question {
+    font-size: 17px;
+  }
+
+  .checkbox-text {
+    font-size: 15px;
+  }
+
+  .result-overlay p {
+    font-size: 18px;
+  }
 }
