@@ -281,3 +281,207 @@ h1 a img {
   font-size: 16px;
   opacity: 0.8;
 }
+
+/* =========================
+   画面幅の狭い端末用の補正
+   900pxを境にmedicine-bodyを縦積みにし、
+   medicine-rightがmedicine-leftの下に来るようにする
+========================= */
+
+/* 900px以下：横並び→縦積みに切り替え */
+@media (max-width: 900px) {
+  h1 {
+    padding: 0 5vw;
+  }
+
+  .medicine-wrap {
+    padding: 20px 20px;
+  }
+
+  /* 横並びをやめて縦積みにする */
+  .medicine-body {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .medicine-left {
+    margin-left: 0;
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: 480px;
+  }
+
+  .medicine-img {
+    width: 260px;
+    height: 260px;
+  }
+
+  .medicine-right {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 0;
+    padding-left: 0;
+    padding-bottom: 0; /* ボタンをabsoluteからstaticにするため不要に */
+  }
+
+  /* 2列だと狭い画面で文字が溢れるため1列に */
+  .medicine-right-col {
+    flex: 1 1 100%;
+  }
+
+  .medicine-right p {
+    white-space: normal;
+  }
+
+  /* ボタンをabsolute配置から通常の流れに戻し、中央に表示 */
+  .hukuyou-btn {
+    position: static;
+    flex: 1 0 100%;
+    width: fit-content;
+    margin: 30px auto 0;
+    padding: 22px 70px;
+    font-size: 26px;
+  }
+
+  .video-head {
+    padding: 0 5vw;
+  }
+
+  .maker-note {
+    width: 90%;
+    max-width: 520px;
+    transform: rotate(-2deg);
+    margin: -60px auto 0;
+  }
+}
+
+/* 760px以下：スマホ向けにさらに縮小 */
+@media (max-width: 760px) {
+  h1 {
+    height: 80px;
+  }
+
+  h1 a img {
+    width: 85px;
+  }
+
+  .sound-button img {
+    width: 55px;
+    height: 55px;
+  }
+
+  .medicine-wrap {
+    padding: 16px 14px;
+  }
+
+  .medicine-left h2 {
+    font-size: 24px;
+  }
+
+  .medicine-img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .medicine-left h3 {
+    font-size: 17px;
+  }
+
+  .medicine-left p {
+    font-size: 14px;
+    line-height: 1.8;
+  }
+
+  .medicine-right h3 {
+    font-size: 17px;
+  }
+
+  .medicine-right p {
+    font-size: 15px;
+    margin-left: 0;
+  }
+
+  .hukuyou-btn {
+    padding: 16px 44px;
+    font-size: 20px;
+  }
+
+  .loading-gif {
+    width: 220px;
+  }
+
+  .video-head {
+    height: 70px;
+  }
+
+  .video-head a img {
+    width: 70px;
+  }
+
+  .maker-note {
+    transform: none;
+    margin: -50px auto 0;
+    padding: 20px;
+  }
+
+  .maker-note h3 {
+    font-size: 18px;
+  }
+
+  .maker-note p {
+    font-size: 14px;
+  }
+
+  .back-btn-wrap {
+    margin-top: 100px;
+  }
+
+  .back-btn {
+    padding: 14px 40px;
+    font-size: 20px;
+  }
+
+  .footer-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .footer-top {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .footer-copy {
+    font-size: 12px;
+  }
+}
+
+/* 450px以下：さらに小さい端末向けに微調整 */
+@media (max-width: 450px) {
+  .medicine-img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .medicine-left h2 {
+    font-size: 20px;
+  }
+
+  .hukuyou-btn {
+    padding: 12px 30px;
+    font-size: 16px;
+  }
+
+  .maker-note {
+    padding: 14px;
+  }
+
+  .maker-note h3 {
+    font-size: 16px;
+  }
+
+  .maker-note p {
+    font-size: 13px;
+  }
+}
