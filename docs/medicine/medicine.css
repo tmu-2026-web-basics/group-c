@@ -121,11 +121,11 @@ h1 a img {
   white-space: nowrap;
 }
 
+/* 服用してみるボタンで、音声付きの動画再生を自動再生するようにすると、音声アリでも再生できる */
 .hukuyou-btn {
   border: none;
   font-family: inherit;
   cursor: pointer;
-  /* 以下は既存のまま */
   position: absolute;
   right: 10%;
   bottom: -30px;
@@ -168,7 +168,7 @@ h1 a img {
   transition: opacity 1s ease;
   z-index: 1001;
   background-color: #CDD3DC;
-  overflow-y: auto; /* ★スクロールを許可 */
+  overflow-y: auto; /* スクロールを許可 */
 }
 .video-overlay.show {
   opacity: 1;
@@ -182,7 +182,7 @@ h1 a img {
   margin: 0 auto;
 }
 .video-head {
-  position: sticky; /* ★absoluteからstickyに変更し、スクロール中も上に残す */
+  position: sticky; /*stickyに変更し、スクロール中も上に残す */
   top: 0;
   left: 0;
   right: 0;
@@ -206,8 +206,8 @@ h1 a img {
 }
 /* 付箋風の「製造者からひとこと」 */
 .maker-note {
-  position: relative; /* ★absoluteから通常の流れへ */
-  margin-top: -100px; /* ★上のmargin値を増減して、下げたい位置に調整 */
+  position: relative; 
+  margin-top: -100px;
   width: 780px;
   max-width: 80%;
   padding: 30px 35px;
@@ -249,9 +249,9 @@ h1 a img {
   opacity: 0.8;
 }
 
-/* フッター */
+/* 動画再生時にフェードインしてくるfooter */
 .video-footer {
-  position: relative; /* ★fixedから通常の流れへ */
+  position: relative;
   z-index: 1002;
   background-color: #627597;
   color: white;
